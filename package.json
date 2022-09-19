@@ -1,3 +1,4 @@
+
 {
   "name": "tecsupdigital",
   "version": "0.1.0",
@@ -42,11 +43,18 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not op_mini all"
-  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
     "@babel/core": "^7.13.14",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
@@ -70,7 +78,7 @@
     "svg-url-loader": "^7.1.1",
     "url-loader": "^4.1.1",
     "webpack": "^5.30.0",
-    "webpack-cli": "^4.9.2",
+    "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
   }
 }
