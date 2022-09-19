@@ -2,6 +2,7 @@
   "name": "tecsupdigital",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@progress/kendo-react-buttons": "^3.17.0",
     "@progress/kendo-react-conversational-ui": "^3.17.0",
