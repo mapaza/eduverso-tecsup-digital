@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- IE -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+  <!-- Primary Meta Tags -->
+<title>Transformación Digital - Tecsup</title>
+<meta name="title" content="Transformación Digital - Tecsup">
+<meta name="description" content="Toma la delantera con tu empresa y obtén innumerables beneficios al transformarla digitalmente">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://metatags.io/">
+<meta property="og:title" content="Transformación Digital - Tecsup">
+<meta property="og:description" content="Toma la delantera con tu empresa y obtén innumerables beneficios al transformarla digitalmente">
+<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://metatags.io/">
+<meta property="twitter:title" content="Transformación Digital - Tecsup">
+<meta property="twitter:description" content="Toma la delantera con tu empresa y obtén innumerables beneficios al transformarla digitalmente">
+<meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;200;600&display=swap" rel="stylesheet">
+</head>
+
+<body style="background: #0E0E0F;"> 
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="main"></div>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+        window.addEventListener('dfMessengerLoaded', function (event) {
+        $r1 = document.querySelector("df-messenger");
+        $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
+        var sheet = new CSSStyleSheet;
+        
+        sheet.replaceSync( `div.chat-wrapper[opened="true"] { height: 410px }`);
+        $r2.shadowRoot.adoptedStyleSheets = [ sheet ];
+        });
+    });
+  </script>
+</body>
+
+</html>
