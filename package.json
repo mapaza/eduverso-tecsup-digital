@@ -19,6 +19,7 @@
     "html-react-parser": "^0.14.0",
     "md5": "^2.3.0",
     "node-sass": "^7.0.3",
+    "sass-loader": "^11.0.1",
     "polished": "^4.0.2",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
