@@ -56,7 +56,7 @@ export default function App() {
   return (
     <Main>
       <LoaderContext>
-       
+        <Router>
           <Layout>
             {/* <Header /> */}
             <div
@@ -69,16 +69,16 @@ export default function App() {
                 position: "absolute",
               }}
             >
-              {window.location.pathname !== "/" && (
+             {/*  {window.location.pathname !== "/" && (
                 <BoxModel mesh={mesh} pathModel={modelHidrociclon} />
               )}
               {window.location.pathname !== "/" && (
                 <BoxModel mesh={mesh2} pathModel={modelBomba} />
-              )}
+              )} */}
             </div>
 
-            
-              {/*<Route exact path="/">
+            <Switch>
+             {/*  <Route exact path="/">
                 <SectionsWrapper/>
               </Route>
               <Route path="/servicios">
@@ -98,14 +98,8 @@ export default function App() {
               </Route>
               <Route path="/login">
                 <Login/>
-              </Route>*/}
-              <Route exact path="/" component={SectionsWrapper} />
-              <Route path="/servicios" component={Services} />
-              <Route path="/casos" component={Cases} />
-              <Route path="/contacto" component={Contact} />
-              <Route path="/transformacion-digital" component={Survey} />
-              <Route path="/demo" component={Demos_test} />
-              <Route exact path="/login" component={Login} /> 
+              </Route> */}
+             
                <Route exact path="/" component={SectionsWrapper} />
               <Route path="/servicios" component={Services} />
               <Route path="/casos" component={Cases} />
@@ -114,11 +108,11 @@ export default function App() {
               <Route path="/demo" component={Demos_test} />
               <Route exact path="/login" component={Login} /> 
               {/* <Route path="*" component={NotFound} /> */}
-            
+            </Switch>
             <Loader />
             <GlobalStyles />
           </Layout>
-        
+        </Router>
         <ChatBot />
       </LoaderContext>
     </Main>
