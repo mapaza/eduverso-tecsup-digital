@@ -8,7 +8,7 @@ import SectionsWrapper from "../SectionsWrapper";
 import BoxModel from "../FirstSection/BoxModel";
 import Loader from "../Loader";
 import Services from "../Services";
-import Cases from "../Cases";
+
 import Contact from "../Contact";
 import Survey from "../Survey";
 
@@ -34,7 +34,7 @@ const Cases = () => {
 
       <Route exact path="/" component={SectionsWrapper} />
               <Route path="/servicios" component={Services} />
-              <Route path="/casos" component={Cases} />
+             
               <Route path="/contacto" component={Contact} />
               <Route path="/transformacion-digital" component={Survey} />
               <Route path="/demo" component={Demos_test} />
