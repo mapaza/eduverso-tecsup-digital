@@ -69,12 +69,12 @@ export default function App() {
                 position: "absolute",
               }}
             >
-             {/*  {window.location.pathname !== "/" && (
+              {window.location.pathname !== "/" && (
                 <BoxModel mesh={mesh} pathModel={modelHidrociclon} />
               )}
               {window.location.pathname !== "/" && (
                 <BoxModel mesh={mesh2} pathModel={modelBomba} />
-              )} */}
+              )}
             </div>
 
             <Switch>
