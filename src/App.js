@@ -56,7 +56,7 @@ export default function App() {
   return (
     <Main>
       <LoaderContext>
-        <Router>
+       
           <Layout>
             {/* <Header /> */}
             <div
@@ -77,8 +77,8 @@ export default function App() {
               )}
             </div>
 
-            <Switch>
-              <Route exact path="/">
+            
+              {/*<Route exact path="/">
                 <SectionsWrapper/>
               </Route>
               <Route path="/servicios">
@@ -98,21 +98,27 @@ export default function App() {
               </Route>
               <Route path="/login">
                 <Login/>
-              </Route>
-             
-              {/* <Route exact path="/" component={SectionsWrapper} />
+              </Route>*/}
+              <Route exact path="/" component={SectionsWrapper} />
               <Route path="/servicios" component={Services} />
               <Route path="/casos" component={Cases} />
               <Route path="/contacto" component={Contact} />
               <Route path="/transformacion-digital" component={Survey} />
               <Route path="/demo" component={Demos_test} />
-              <Route exact path="/login" component={Login} /> */}
+              <Route exact path="/login" component={Login} /> 
+               <Route exact path="/" component={SectionsWrapper} />
+              <Route path="/servicios" component={Services} />
+              <Route path="/casos" component={Cases} />
+              <Route path="/contacto" component={Contact} />
+              <Route path="/transformacion-digital" component={Survey} />
+              <Route path="/demo" component={Demos_test} />
+              <Route exact path="/login" component={Login} /> 
               {/* <Route path="*" component={NotFound} /> */}
-            </Switch>
+            
             <Loader />
             <GlobalStyles />
           </Layout>
-        </Router>
+        
         <ChatBot />
       </LoaderContext>
     </Main>

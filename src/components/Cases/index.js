@@ -19,14 +19,6 @@ const Cases = () => {
 
   return (
     <Container>
-       <Route exact path="/" component={SectionsWrapper} />
-              <Route path="/servicios" component={Services} />
-              <Route path="/casos" component={Cases} />
-              <Route path="/contacto" component={Contact} />
-              <Route path="/transformacion-digital" component={Survey} />
-              <Route path="/demo" component={Demos_test} />
-              <Route exact path="/login" component={Login} /> 
-             
       <Route path='/casos/uso-de-realidad-mixta-en-el-montaje-y-desmontaje-de-rodamientos' component={Case1} />
 
       <Route path='/casos/plataforma-de-entrenamiento-con-elementos-virtuales-y-holográficos' component={Case2} />
