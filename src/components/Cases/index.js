@@ -4,7 +4,6 @@ import { Route, useHistory, useLocation } from 'react-router-dom'
 import { Container } from './styles'
 import { Case1, Case2, Case3 } from './Case'
 
-import SectionsWrapper from "./components/SectionsWrapper";
 import SectionsWrapper from "../SectionsWrapper";
 import BoxModel from "../FirstSection/BoxModel";
 import Loader from "../Loader";
