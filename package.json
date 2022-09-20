@@ -1,6 +1,6 @@
 {
   "name": "tecsupdigital",
-  "homepage": "https://eduverso-tecsup-digital.vercel.app/",
+  "homepage": "https://eduverso-tecsup-digital.vercel.app/tecsup-digital",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
