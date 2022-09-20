@@ -78,13 +78,35 @@ export default function App() {
             </div>
 
             <Switch>
-              <Route exact path="/" component={SectionsWrapper} />
+              <Route exact path="/">
+                <SectionsWrapper/>
+              </Route>
+              <Route path="/servicios">
+                <Services/>
+              </Route>
+              <Route path="/casos">
+                <Cases/>
+              </Route>
+              <Route path="/contacto">
+                <Contact/>
+              </Route>
+              <Route path="/transformacion-digital">
+                <Survey/>
+              </Route>
+              <Route path="/demo">
+                <Demos_test/>
+              </Route>
+              <Route path="/login">
+                <Login/>
+              </Route>
+             
+              {/* <Route exact path="/" component={SectionsWrapper} />
               <Route path="/servicios" component={Services} />
               <Route path="/casos" component={Cases} />
               <Route path="/contacto" component={Contact} />
               <Route path="/transformacion-digital" component={Survey} />
               <Route path="/demo" component={Demos_test} />
-              <Route exact path="/login" component={Login} />
+              <Route exact path="/login" component={Login} /> */}
               {/* <Route path="*" component={NotFound} /> */}
             </Switch>
             <Loader />
