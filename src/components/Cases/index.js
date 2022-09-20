@@ -3,13 +3,15 @@ import React, { useEffect } from 'react'
 import { Route, useHistory, useLocation } from 'react-router-dom'
 import { Container } from './styles'
 import { Case1, Case2, Case3 } from './Case'
+
 import SectionsWrapper from "./components/SectionsWrapper";
-import BoxModel from "./components/FirstSection/BoxModel";
-import Loader from "./components/Loader";
-import Services from "./components/Services";
-import Cases from "./components/Cases";
-import Contact from "./components/Contact";
-import Survey from "./components/Survey";
+import SectionsWrapper from "../SectionsWrapper";
+import BoxModel from "../FirstSection/BoxModel";
+import Loader from "../Loader";
+import Services from "../Services";
+import Cases from "../Cases";
+import Contact from "../Contact";
+import Survey from "../Survey";
 
 const Cases = () => {
 
